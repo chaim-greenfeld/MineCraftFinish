@@ -1,0 +1,129 @@
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns:repeat(41, 46.47px) ;
+    grid-template-rows: repeat(25, 46px);
+}
+
+.sky{
+    background-color: #87CEEB;
+}
+
+.grass {
+    background: url('grass.webp') center center / cover ;
+}
+.dirt{
+    
+    background: url('dirt.webp') center center / cover;
+}
+.stone{
+    background: url('stone.webp') center center / cover;
+}
+
+.wood{
+    background: url('oak-log.webp') center center / cover;
+}
+
+.leaves{
+    background: url('oak-leaves.webp') center center / cover;
+    background-color: #87CEEB;
+}
+
+.item:hover {
+    border: 0.5px solid yellow;
+}
+
+.wood:hover,
+.sky:hover {
+    border: 0.5px solid yellow;
+}
+
+.transparent {
+  opacity: 0; 
+}
+
+
+
+.tails {
+    width: 4%;
+    position: absolute;
+    background-color: #87CEEB;
+    background-color: rgba(0, 0, 0, 0); 
+    display: flex;
+
+    right: 0;
+    top: 25px;
+    justify-content: center;
+    gap: 1rem;
+    
+
+
+    flex-direction:column ;
+}
+
+.tails div {
+    height: 4rem;
+    width:  4rem;
+    border: 2px solid;
+    border-color: aliceblue;
+}
+
+
+.tools {
+    top: 10px;
+    position: absolute;
+    background-color: #87CEEB;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    
+
+    flex-direction:column ;
+    gap: 1rem;
+    z-index: 0;
+    
+}
+
+.tools div {
+    height: 4rem;
+    width:  4rem;
+    border: none
+}
+
+
+
+
+
+
+.shears {
+    background: url('shears.webp') center center / cover;
+}
+
+.shovel {
+        background: url('diamond-shovel.webp') center center / cover;
+}
+
+.pickaxe {
+     background: url('diamond-pickaxe.webp') center center / cover;
+}
+
+.axe {
+     background: url('diamond-axe.webp') center center / cover;
+}
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+
+a {
+    position: absolute;
+    text-align: center;
+}
