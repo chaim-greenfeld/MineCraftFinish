@@ -52,7 +52,7 @@ body {
 
 .tails {
     width: 4%;
-    position: absolute;
+    position: fixed;
     background-color: #87CEEB;
     background-color: rgba(0, 0, 0, 0); 
     display: flex;

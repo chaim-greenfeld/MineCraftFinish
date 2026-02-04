@@ -146,6 +146,8 @@ function createTrees(column, rowStart) {
 
 
 function cell(row, col) {
+  if (row < 0 || row >= 25) return null;
+  if (col < 0 || col >= 41) return null;
     const width = 41;
     const index = (row * width) + col;
     return container.children[index];
@@ -167,7 +169,7 @@ function drawLeaves(col, topRow) {
 function createRandomTrees() {
   const treesNum = Math.floor(Math.random() * 3) + 1;
   for (let i = 0 ; i< treesNum; i++){
-    const Leaves = Math.floor(Math.random() * 50) + 3;
+    const Leaves = Math.floor(Math.random() * (41 - 2*3)) + 3;
     const Trees = Math.floor(Math.random() * 6) +4;
 ;
     drawLeaves(Leaves, Trees -5)
